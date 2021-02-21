@@ -131,6 +131,11 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "STARJEDI";
+  src: local("STARJEDI"), url("../fonts/STARJEDI.TTF") format("truetype");
+  font-weight: normal;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -193,6 +198,11 @@ body .App {
 }
 .pagination li.active {
   opacity: 40%;
+}
+
+#home h1 {
+  font-family: "STARJEDI";
+  font-size: 3rem;
 }
 
 .character-wrapper {

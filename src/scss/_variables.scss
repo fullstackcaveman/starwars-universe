@@ -1,5 +1,12 @@
+@font-face {
+	font-family: 'STARJEDI';
+	src: local('STARJEDI'), url('../fonts/STARJEDI.TTF') format('truetype');
+	font-weight: normal;
+}
+
 $primary-font-color: #4f1605;
 
 $primary-font: 'Roboto', sans-serif;
+$starwars-font: 'STARJEDI';
 
 $color-white: #fff;
