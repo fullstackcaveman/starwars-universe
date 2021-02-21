@@ -1,10 +1,14 @@
 @import 'reset';
-// @import 'normalize';
 
 @import 'variables';
 
 body {
 	font-family: $primary-font;
+	font-family: 'Roboto', sans-serif;
+	background-image: url('../images/sw-bg.jpg');
+	background-size: cover;
+	box-sizing: border-box;
+	text-align: center;
 
 	#root {
 		height: 100vh;
@@ -24,5 +28,6 @@ body {
 @import 'elements';
 @import 'pagination';
 
+@import 'home';
 @import 'character';
 @import 'characters';

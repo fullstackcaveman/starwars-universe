@@ -9,7 +9,11 @@ const Pagination = ({ charactersPerPage, totalCharacters, paginate }) => {
 		<nav className='pagination'>
 			{pageNumbers.map((number) => (
 				<li key={number} className={'page-item'} id={`page ${number}`}>
-					<a className='page-link' onClick={() => paginate(number)} href='!#'>
+					<a
+						className='page-link'
+						onClick={() => paginate(number)}
+						href={`#page=${number}`}
+					>
 						{number}
 					</a>
 				</li>

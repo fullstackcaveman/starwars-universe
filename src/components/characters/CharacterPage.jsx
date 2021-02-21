@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BASE_URL } from '../constants';
+import { BASE_URL } from '../../constants';
 import Characters from './Characters';
-import Pagination from './Pagination';
+import Pagination from '../Pagination';
 
 const CharacterPage = () => {
 	const pageOne = document.getElementById('page 1');

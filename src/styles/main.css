@@ -133,6 +133,11 @@ table {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-image: url("../images/sw-bg.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
 }
 body #root {
   height: 100vh;
