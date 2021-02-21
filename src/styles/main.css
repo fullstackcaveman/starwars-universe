@@ -170,6 +170,7 @@ body .App {
 .pagination {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .pagination li {
   border: 1px solid black;
