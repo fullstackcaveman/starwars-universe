@@ -1,54 +1,48 @@
-import { useState, useEffect } from 'react';
-import ReactPaginate from 'react-paginate';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { AKABAB_BASE_URL } from './constants';
-import './App.css';
+import { BASE_URL } from './constants';
+import './styles/main.css';
 import Characters from './components/Characters';
+import Pagination from './components/Pagination';
 
 const App = () => {
-	const [characterData, setCharacterData] = useState({
-		characters: [],
-		fetchCharacters: 'all.json',
-		fetchCharacter: 1,
-		page: 3,
-	});
-	// const [characters, setCharacters] = useState([]);
-	// const [fetchCharacters, setFetchCharacters] = useState('all.json');
-	// const [fetchCharacter, setFetchCharacter] = useState(1);
-	// const [page, setPage] = useState(3);
+	const [characters, setCharacters] = useState([]);
+	const [loading, setLoading] = useState(false);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [charactersPerPage] = useState(10);
 
 	useEffect(() => {
-		const getCharacters = () => {
+		const fetchCharacters = () => {
+			setLoading(true);
 			axios
-				.get(`${AKABAB_BASE_URL}/${characterData.fetchCharacters}`)
+				.get(`${BASE_URL}/all.json`)
 				.then((res) => {
-					console.log(res.data);
-					setCharacterData({ characters: res.data });
+					setCharacters(res.data);
+					setLoading(false);
 				})
 				.catch((err) => {
 					console.log(err);
 				});
 		};
-
-		getCharacters();
+		fetchCharacters();
 	}, []);
 
-	// const setNextPage = () => {
-	// 	setPage(page + 1);
-	// };
+	const indexOfLastCharacter = currentPage * charactersPerPage;
+	const indexOfFirstCharacter = indexOfLastCharacter - charactersPerPage;
+	const currentCharacters = characters.slice(
+		indexOfFirstCharacter,
+		indexOfLastCharacter
+	);
 
-	// const setPrevPage = () => {
-	// 	setPage(page - 1);
-	// };
+	const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 	return (
 		<div className='App'>
-			<h1 className='Header'>Star Wars Characters</h1>
-			<Characters
-				characters={characterData.characters}
-				page={characterData.page}
-				// nextpage={setNextPage}
-				// prevpage={setPrevPage}
+			<Characters characters={currentCharacters} loading={loading} />
+			<Pagination
+				charactersPerPage={charactersPerPage}
+				totalCharacters={characters.length}
+				paginate={paginate}
 			/>
 		</div>
 	);

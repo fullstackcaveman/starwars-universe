@@ -1,33 +1,19 @@
 import Character from './Character';
-import { CharactersWrapper, Button } from '../styles/Characters.styles';
 
 const Characters = (props) => {
-	const { characters, page, nextpage, prevpage } = props;
+	const { characters, loading } = props;
 
-	const clickHandlerNext = () => {
-		nextpage();
-	};
-
-	const clickHandlerPrev = () => {
-		prevpage();
-	};
+	if (loading) {
+		return <h2>Loading...</h2>;
+	}
 
 	return (
-		<CharactersWrapper>
+		<div className='characters-wrapper'>
+			<h1>Star Wars Characters</h1>
 			{characters.map((character) => {
 				return <Character key={character.name} {...character} />;
 			})}
-			{/* {page === 1 ? (
-				<div className='buttons'>
-					<Button onClick={clickHandlerNext}>Next</Button>
-				</div>
-			) : (
-				<div className='buttons'>
-					<Button onClick={clickHandlerPrev}>Prev</Button>
-					<Button onClick={clickHandlerNext}>Next</Button>
-				</div>
-			)} */}
-		</CharactersWrapper>
+		</div>
 	);
 };
 

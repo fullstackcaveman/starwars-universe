@@ -1,5 +1,3 @@
-import { CharacterWrapper, H2, Button } from '../styles/Character.styles.js';
-
 const Character = (props) => {
 	const { name, born, height, hairColor, eyeColor, gender, image } = props;
 
@@ -11,10 +9,15 @@ const Character = (props) => {
 	};
 
 	return (
-		<CharacterWrapper id={name}>
+		<div id={name} className='character-wrapper'>
 			<div className='container'>
-				<H2 className='name'>{name}</H2>
-				<Button onClick={clickHandler}>Character Info</Button>
+				<h2 className='name'>{name}</h2>
+				<button
+					className='btn btn-primary btn-character'
+					onClick={clickHandler}
+				>
+					Character Info
+				</button>
 			</div>
 			<div id={name + born} className='flex hidden'>
 				<div className='row'>
@@ -36,7 +39,7 @@ const Character = (props) => {
 					</div>
 				</div>
 			</div>
-		</CharacterWrapper>
+		</div>
 	);
 };
 

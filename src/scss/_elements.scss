@@ -1,0 +1,25 @@
+// Header
+
+// Buttons
+.btn {
+	border: none;
+	cursor: pointer;
+
+	&.btn-primary {
+		color: $color-white;
+		margin: 0 10px;
+		padding: 2px 8px;
+		border-radius: 3px;
+		background-color: $primary-font-color;
+
+		&.btn-character {
+			position: absolute;
+			top: 6px;
+			right: 0;
+		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

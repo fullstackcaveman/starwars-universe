@@ -1,0 +1,15 @@
+.characters-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		font-size: 3rem;
+		font-weight: bold;
+		margin: 10px auto;
+		color: $primary-font-color;
+		text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+			1px 1px 0 #fff;
+	}
+}

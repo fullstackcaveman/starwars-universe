@@ -1,0 +1,29 @@
+.pagination {
+	display: flex;
+	flex-direction: row;
+
+	li {
+		border: 1px solid black;
+		border-radius: 3px;
+		margin: 10px 3px;
+		background: linear-gradient(
+			to bottom,
+			rgba(246, 230, 180, 1) 0%,
+			rgba(234, 129, 0, 1) 100%
+		);
+
+		a {
+			color: $primary-font-color;
+			font-size: 1.6rem;
+			padding: 0 10px;
+
+			&.active {
+				color: rgb(209, 209, 209);
+			}
+		}
+
+		&.active {
+			background: $primary-font-color;
+		}
+	}
+}
