@@ -16,10 +16,14 @@
 			color: $primary-font-color;
 			font-size: 1.6rem;
 			padding: 0 10px;
+
+			&.active {
+				color: black;
+			}
 		}
 
 		&.active {
-			opacity: 50%;
+			opacity: 40%;
 		}
 	}
 }

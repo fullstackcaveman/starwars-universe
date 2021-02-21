@@ -14,10 +14,12 @@ const App = () => {
 
 	const pages = document.querySelectorAll('.page-item');
 
+	// Sets pagination item1 to active
 	window.onload = () => {
 		pageOne.classList.add('active');
 	};
 
+	// Gets characters from the api
 	useEffect(() => {
 		const fetchCharacters = () => {
 			setLoading(true);
@@ -34,6 +36,7 @@ const App = () => {
 		fetchCharacters();
 	}, []);
 
+	// Sets structure of pagination
 	const indexOfLastCharacter = currentPage * charactersPerPage;
 	const indexOfFirstCharacter = indexOfLastCharacter - charactersPerPage;
 	const currentCharacters = characters.slice(
@@ -41,13 +44,16 @@ const App = () => {
 		indexOfLastCharacter
 	);
 
+	// Controls which characters to display and button styling
 	const paginate = (pageNumber) => {
 		setCurrentPage(pageNumber);
 		console.log(pages);
+		// Clears active class from all pagination items
 		pages.forEach((page) => {
 			page.classList.remove('active');
 		});
 
+		// Adds class 'active' to pagination element
 		pages.forEach((page) => {
 			if (page.id.match(`page ${pageNumber}`)) {
 				page.classList.add('active');
