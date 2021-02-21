@@ -28,7 +28,9 @@ const Character = (props) => {
 						) : (
 							<p className='birth'>Birth Year: unknown</p>
 						)}
-						<p>Height: {height} meters</p>
+
+						{height ? <p>Height: {height} meters</p> : <p>Height: unknown</p>}
+
 						{hairColor ? (
 							<p>Hair Color: {hairColor}</p>
 						) : (

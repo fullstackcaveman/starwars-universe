@@ -16,14 +16,10 @@
 			color: $primary-font-color;
 			font-size: 1.6rem;
 			padding: 0 10px;
-
-			&.active {
-				color: rgb(209, 209, 209);
-			}
 		}
 
 		&.active {
-			background: $primary-font-color;
+			opacity: 50%;
 		}
 	}
 }

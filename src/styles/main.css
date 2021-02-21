@@ -182,11 +182,8 @@ body .App {
   font-size: 1.6rem;
   padding: 0 10px;
 }
-.pagination li a.active {
-  color: #d1d1d1;
-}
 .pagination li.active {
-  background: #4f1605;
+  opacity: 50%;
 }
 
 .character-wrapper {
