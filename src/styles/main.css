@@ -139,7 +139,8 @@ table {
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto", sans-serif;
-  background-image: url("../images/sw-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
   text-align: center;
@@ -200,9 +201,104 @@ body .App {
   opacity: 40%;
 }
 
-#home h1 {
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.background-container img {
+  height: 70vh;
+  width: 70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+}
+.background-container .stars {
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
+}
+.background-container .twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  -moz-animation: move-background 70s linear infinite;
+  -ms-animation: move-background 70s linear infinite;
+  -o-animation: move-background 70s linear infinite;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: src("../images/stars-bg.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+}
+#home .starwars {
+  position: relative;
+}
+#home .starwars p,
+#home .starwars span {
   font-family: "STARJEDI";
-  font-size: 3rem;
+  font-size: 5rem;
+  color: black;
+  text-shadow: -2px -2px 0 #ffee58, 2px -2px 0 #ffee58, -2px 2px 0 #ffee58, 2px 2px 0 #ffee58;
+}
+#home .starwars p.wars,
+#home .starwars span.wars {
+  position: absolute;
+  top: 65px;
+  left: -15px;
 }
 
 .character-wrapper {

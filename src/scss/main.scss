@@ -5,7 +5,9 @@
 body {
 	font-family: $primary-font;
 	font-family: 'Roboto', sans-serif;
-	background-image: url('../images/sw-bg.jpg');
+	// background-image: url('../images/sw-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
 	text-align: center;
@@ -27,6 +29,7 @@ body {
 
 @import 'elements';
 @import 'pagination';
+@import 'twinkling';
 
 @import 'home';
 @import 'character';

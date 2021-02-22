@@ -3,6 +3,7 @@ import axios from 'axios';
 import { BASE_URL } from '../../constants';
 import Characters from './Characters';
 import Pagination from '../Pagination';
+import Background from '../Background';
 
 const CharacterPage = () => {
 	const pageOne = document.getElementById('page 1');
@@ -68,6 +69,7 @@ const CharacterPage = () => {
 				totalCharacters={characters.length}
 				paginate={paginate}
 			/>
+			<Background />
 		</div>
 	);
 };

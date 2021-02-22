@@ -1,6 +1,28 @@
 #home {
-	h1 {
-		font-family: $starwars-font;
-		font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: src('../images/stars-bg.jpg') no-repeat center center/cover;
+	width: 100%;
+	height: 100%;
+
+	.starwars {
+		position: relative;
+
+		p,
+		span {
+			font-family: $starwars-font;
+			font-size: 5rem;
+			color: black;
+			text-shadow: -2px -2px 0 #ffee58, 2px -2px 0 #ffee58, -2px 2px 0 #ffee58,
+				2px 2px 0 #ffee58;
+
+			&.wars {
+				position: absolute;
+				top: 65px;
+				left: -15px;
+			}
+		}
 	}
 }
