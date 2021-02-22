@@ -47,7 +47,6 @@ const CharacterPage = () => {
 	// Controls which characters to display and button styling
 	const paginate = (pageNumber) => {
 		setCurrentPage(pageNumber);
-		console.log(pages);
 		// Clears active class from all pagination items
 		pages.forEach((page) => {
 			page.classList.remove('active');

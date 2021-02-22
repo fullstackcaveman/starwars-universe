@@ -286,6 +286,8 @@ body .App {
 }
 #home .starwars {
   position: relative;
+  height: 170px;
+  width: 260px;
 }
 #home .starwars p,
 #home .starwars span {
@@ -298,7 +300,7 @@ body .App {
 #home .starwars span.wars {
   position: absolute;
   top: 65px;
-  left: -15px;
+  left: 12px;
 }
 
 .character-wrapper {
@@ -374,11 +376,12 @@ body .App {
   align-items: center;
 }
 .characters-wrapper h1 {
-  font-size: 3rem;
+  font-family: "STARJEDI";
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 10px auto;
-  color: #4f1605;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  color: black;
+  text-shadow: -1px -1px 0 #ffee58, 1px -1px 0 #ffee58, -1px 1px 0 #ffee58, 1px 1px 0 #ffee58;
 }
 
 /*# sourceMappingURL=main.css.map */

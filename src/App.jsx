@@ -5,16 +5,16 @@ import Home from './components/Home';
 
 const App = () => {
 	return (
-		<Switch>
-			<div className='App'>
+		<div className='App'>
+			<Switch>
 				<Route exact path='/'>
 					<Home />
 				</Route>
 				<Route path='/characters'>
 					<CharacterPage />
 				</Route>
-			</div>
-		</Switch>
+			</Switch>
+		</div>
 	);
 };
 

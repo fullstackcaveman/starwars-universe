@@ -9,6 +9,8 @@
 
 	.starwars {
 		position: relative;
+		height: 170px;
+		width: 260px;
 
 		p,
 		span {
@@ -21,7 +23,7 @@
 			&.wars {
 				position: absolute;
 				top: 65px;
-				left: -15px;
+				left: 12px;
 			}
 		}
 	}
