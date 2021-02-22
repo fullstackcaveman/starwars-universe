@@ -19,7 +19,7 @@ const CharacterPage = () => {
 		pageOne.classList.add('active');
 	};
 
-	// Gets characters from the api
+	// GET characters from the api
 	useEffect(() => {
 		const fetchCharacters = () => {
 			setLoading(true);

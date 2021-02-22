@@ -1,10 +1,11 @@
+import Loader from '../Loader';
 import Character from './Character';
 
 const Characters = (props) => {
 	const { characters, loading } = props;
 
 	if (loading) {
-		return <h2>Loading...</h2>;
+		return <Loader />;
 	}
 
 	return (
