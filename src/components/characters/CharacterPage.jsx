@@ -6,18 +6,13 @@ import Pagination from '../Pagination';
 import Background from '../Background';
 
 const CharacterPage = () => {
-	const pageOne = document.getElementById('page 1');
+	const pageOne = document.getElementById('page1');
 	const [characters, setCharacters] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const [currentPage, setCurrentPage] = useState(1);
-	const [charactersPerPage] = useState(10);
+	const [charactersPerPage] = useState(6);
 
 	const pages = document.querySelectorAll('.page-item');
-
-	// Sets pagination item1 to active
-	window.onload = () => {
-		pageOne.classList.add('active');
-	};
 
 	// GET characters from the api
 	useEffect(() => {
@@ -54,10 +49,15 @@ const CharacterPage = () => {
 
 		// Adds class 'active' to pagination element
 		pages.forEach((page) => {
-			if (page.id.match(`page ${pageNumber}`)) {
+			if (page.id === `page${pageNumber}`) {
 				page.classList.add('active');
 			}
 		});
+	};
+
+	// Sets pagination item1 to active
+	window.onload = () => {
+		pageOne.classList.add('active');
 	};
 
 	return (

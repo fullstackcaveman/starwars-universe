@@ -1,3 +1,4 @@
+// sass --watch src/scss/main.scss:src/styles/main.css
 @import 'reset';
 
 @import 'variables';
@@ -10,6 +11,7 @@ body {
 
 	#root {
 		height: 100vh;
+		box-sizing: border-box;
 	}
 
 	.App {
@@ -20,6 +22,7 @@ body {
 		align-items: center;
 		text-align: center;
 		height: 100vh;
+		box-sizing: border-box;
 	}
 }
 
@@ -30,3 +33,4 @@ body {
 @import 'home';
 @import 'character';
 @import 'characters';
+@import 'character-card';

@@ -1,5 +1,27 @@
 // Header
 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	padding: 5px;
+	// background-color: rgb(61, 61, 61);
+	z-index: 100;
+
+	.header-left {
+		padding: 0 20px;
+	}
+
+	.nav-btn {
+		padding: 0 20px;
+	}
+}
+
 // Buttons
 .btn {
 	border: none;

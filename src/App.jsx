@@ -1,17 +1,16 @@
 import { Switch, Route } from 'react-router-dom';
 import CharacterPage from './components/characters/CharacterPage';
+import Header from './components/Header';
 import Home from './components/Home';
 
 const App = () => {
 	return (
 		<div className='App'>
+			<Header />
 			<Switch>
-				<Route exact path='/'>
-					<Home />
-				</Route>
-				<Route path='/characters'>
-					<CharacterPage />
-				</Route>
+				<Route path='/characters' component={CharacterPage} />
+
+				<Route exact path='/' component={Home} />
 			</Switch>
 		</div>
 	);

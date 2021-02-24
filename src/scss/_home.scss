@@ -11,6 +11,7 @@
 		position: relative;
 		height: 170px;
 		width: 260px;
+		// margin-top: 150px;
 
 		p,
 		span {
@@ -35,9 +36,8 @@
 		text-align: center;
 		flex-wrap: wrap;
 		width: 95%;
-		height: 500px;
 		padding: 10px;
-		margin-top: 20px;
+		// margin-top: 80px;
 
 		// border: #ffee58 2px solid;
 
@@ -46,10 +46,10 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
-			width: 250px;
-			height: 167px;
+			width: 480px;
+			height: 320px;
 			border-radius: 2px;
-			margin: 0 10px;
+			margin: 5px 10px;
 
 			border: #ffee58 2px solid;
 		}
@@ -59,10 +59,10 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
-			width: 250px;
-			height: 167px;
+			width: 480px;
+			height: 320px;
 			border-radius: 2px;
-			margin: 0 10px;
+			margin: 5px 10px;
 
 			border: #ffee58 2px solid;
 		}

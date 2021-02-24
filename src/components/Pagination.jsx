@@ -8,7 +8,7 @@ const Pagination = ({ charactersPerPage, totalCharacters, paginate }) => {
 	return (
 		<nav className='pagination'>
 			{pageNumbers.map((number) => (
-				<li key={number} className={'page-item'} id={`page ${number}`}>
+				<li key={number} className={'page-item'} id={`page${number}`}>
 					<a
 						className='page-link'
 						onClick={() => paginate(number)}

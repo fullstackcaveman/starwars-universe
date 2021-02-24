@@ -1,0 +1,7 @@
+.MuiCard-root {
+	width: 350px;
+
+	&.MuiPaper-root {
+		border: 2px solid $starwars-yellow;
+	}
+}

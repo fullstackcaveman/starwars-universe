@@ -1,5 +1,6 @@
 import Loader from '../Loader';
 import Character from './Character';
+import CharacterCard from './CharacterCard';
 
 const Characters = (props) => {
 	const { characters, loading } = props;
@@ -12,7 +13,8 @@ const Characters = (props) => {
 		<div className='characters-wrapper'>
 			<h1>Star Wars Characters</h1>
 			{characters.map((character) => {
-				return <Character key={character.name} {...character} />;
+				return <CharacterCard key={character.name} {...character} />;
+				// return <Character key={character.name} {...character} />;
 			})}
 		</div>
 	);

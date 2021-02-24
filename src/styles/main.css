@@ -144,6 +144,7 @@ body {
 }
 body #root {
   height: 100vh;
+  box-sizing: border-box;
 }
 body .App {
   font-size: 62.5%;
@@ -153,6 +154,26 @@ body .App {
   align-items: center;
   text-align: center;
   height: 100vh;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  z-index: 100;
+}
+header .header-left {
+  padding: 0 20px;
+}
+header .nav-btn {
+  padding: 0 20px;
 }
 
 .btn {
@@ -306,19 +327,17 @@ body .App {
   text-align: center;
   flex-wrap: wrap;
   width: 95%;
-  height: 500px;
   padding: 10px;
-  margin-top: 20px;
 }
 #home .links-container .characters-link {
   background-image: url("../images/DarthVader.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 250px;
-  height: 167px;
+  width: 480px;
+  height: 320px;
   border-radius: 2px;
-  margin: 0 10px;
+  margin: 5px 10px;
   border: #ffee58 2px solid;
 }
 #home .links-container .films-link {
@@ -326,10 +345,10 @@ body .App {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 250px;
-  height: 167px;
+  width: 480px;
+  height: 320px;
   border-radius: 2px;
-  margin: 0 10px;
+  margin: 5px 10px;
   border: #ffee58 2px solid;
 }
 
@@ -401,9 +420,10 @@ body .App {
 
 .characters-wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 .characters-wrapper h1 {
   font-family: "STARJEDI";
@@ -412,6 +432,13 @@ body .App {
   margin: 10px auto;
   color: black;
   text-shadow: -1px -1px 0 #ffee58, 1px -1px 0 #ffee58, -1px 1px 0 #ffee58, 1px 1px 0 #ffee58;
+}
+
+.MuiCard-root {
+  width: 350px;
+}
+.MuiCard-root.MuiPaper-root {
+  border: 2px solid #ffee58;
 }
 
 /*# sourceMappingURL=main.css.map */
