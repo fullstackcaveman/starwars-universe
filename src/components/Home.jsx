@@ -12,27 +12,27 @@ const Home = () => {
 
 				<div className='links-container'>
 					<Link to='/characters'>
-						<div className='characters-link'></div>
+						<div className='characters-link' />
 					</Link>
 
 					<Link to='/films'>
-						<div className='films-link'></div>
+						<div className='films-link' />
 					</Link>
 
 					<Link to='/species'>
-						<div className='species-link'></div>
+						<div className='species-link' />
 					</Link>
 
 					<Link to='/starships'>
-						<div className='starships-link'></div>
+						<div className='starships-link' />
 					</Link>
 
 					<Link to='/vehicles'>
-						<div className='vehicles-link'></div>
+						<div className='vehicles-link' />
 					</Link>
 
 					<Link to='/planets'>
-						<div className='planets-link'></div>
+						<div className='planets-link' />
 					</Link>
 				</div>
 
