@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import Background from './Background';
 
 const Home = () => {
@@ -11,17 +11,29 @@ const Home = () => {
 				</div>
 
 				<div className='links-container'>
-					<a href='./characters'>
+					<Link to='/characters'>
 						<div className='characters-link'></div>
-					</a>
-					<a href='./films'>
-						<div className='films-link'></div>
-					</a>
+					</Link>
 
-					<div className='species-link'></div>
-					<div className='starships-link'></div>
-					<div className='vehicles-link'></div>
-					<div className='planets-link'></div>
+					<Link to='/films'>
+						<div className='films-link'></div>
+					</Link>
+
+					<Link to='/species'>
+						<div className='species-link'></div>
+					</Link>
+
+					<Link to='/starships'>
+						<div className='starships-link'></div>
+					</Link>
+
+					<Link to='/vehicles'>
+						<div className='vehicles-link'></div>
+					</Link>
+
+					<Link to='/planets'>
+						<div className='planets-link'></div>
+					</Link>
 				</div>
 
 				<Background />

@@ -1,9 +1,4 @@
-const Pagination = ({
-	charactersPerPage,
-	totalCharacters,
-	paginate,
-	pageOne,
-}) => {
+const Pagination = ({ charactersPerPage, totalCharacters, paginate }) => {
 	const pageNumbers = [];
 
 	for (let i = 1; i <= Math.ceil(totalCharacters / charactersPerPage); i++) {

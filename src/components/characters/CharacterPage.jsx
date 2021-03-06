@@ -56,10 +56,14 @@ const CharacterPage = () => {
 		});
 	};
 
-	// Sets pagination item1 to active
-	window.onload = () => {
-		pageOne.classList.add('active');
-	};
+	// // Sets pagination item1 to active
+	// window.onload = () => {
+	// 	pageOne.classList.add('active');
+	// };
+
+	// useEffect(() => {
+	// 	pageOne.classList.add('active');
+	// }, []);
 
 	return (
 		<div className='character-page'>
@@ -69,6 +73,7 @@ const CharacterPage = () => {
 				charactersPerPage={charactersPerPage}
 				totalCharacters={characters.length}
 				paginate={paginate}
+				pageOne={pageOne}
 			/>
 			<Background />
 		</div>

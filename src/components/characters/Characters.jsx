@@ -1,5 +1,4 @@
 import Loader from '../Loader';
-import Character from './Character';
 import CharacterCard from './CharacterCard';
 
 const Characters = (props) => {
