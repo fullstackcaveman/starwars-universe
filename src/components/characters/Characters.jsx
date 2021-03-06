@@ -11,8 +11,7 @@ const Characters = (props) => {
 	return (
 		<div className='characters-wrapper'>
 			{characters.map((character) => {
-				return <CharacterCard key={character.name} {...character} />;
-				// return <Character key={character.name} {...character} />;
+				return <CharacterCard key={character.name} character={character} />;
 			})}
 		</div>
 	);
