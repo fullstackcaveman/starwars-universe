@@ -11,7 +11,6 @@ const Characters = (props) => {
 
 	return (
 		<div className='characters-wrapper'>
-			<h1>Star Wars Characters</h1>
 			{characters.map((character) => {
 				return <CharacterCard key={character.name} {...character} />;
 				// return <Character key={character.name} {...character} />;

@@ -1,9 +1,7 @@
-.characters-wrapper {
+.character-page {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	flex-wrap: wrap;
+	flex-direction: column;
+	max-width: 1480px;
 
 	h1 {
 		font-family: $starwars-font;
@@ -13,5 +11,12 @@
 		color: black;
 		text-shadow: -1px -1px 0 #ffee58, 1px -1px 0 #ffee58, -1px 1px 0 #ffee58,
 			1px 1px 0 #ffee58;
+	}
+	.characters-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-wrap: wrap;
 	}
 }
