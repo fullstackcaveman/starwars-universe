@@ -335,7 +335,7 @@ header .nav-btn {
   width: 480px;
   height: 320px;
   border-radius: 2px;
-  margin: 5px 10px;
+  margin: 10px;
   border: #ffee58 2px solid;
 }
 #home .links-container .films-link {
@@ -346,7 +346,51 @@ header .nav-btn {
   width: 480px;
   height: 320px;
   border-radius: 2px;
-  margin: 5px 10px;
+  margin: 10px;
+  border: #ffee58 2px solid;
+}
+#home .links-container .starships-link {
+  background-image: url("../images/starships.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 320px;
+  border-radius: 2px;
+  margin: 10px;
+  border: #ffee58 2px solid;
+}
+#home .links-container .species-link {
+  background-image: url("../images/species.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 320px;
+  border-radius: 2px;
+  margin: 10px;
+  border: #ffee58 2px solid;
+}
+#home .links-container .vehicles-link {
+  background-image: url("../images/vehicles.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 320px;
+  border-radius: 2px;
+  margin: 10px;
+  border: #ffee58 2px solid;
+}
+#home .links-container .planets-link {
+  background-image: url("../images/planets.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 320px;
+  border-radius: 2px;
+  margin: 10px;
   border: #ffee58 2px solid;
 }
 
