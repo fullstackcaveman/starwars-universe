@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 });
 
 const CharacterCard = (props) => {
-	const { name, born, height, hairColor, eyeColor, gender, image } = props;
+	const { character } = props;
 
 	const classes = useStyles();
 
@@ -23,25 +23,13 @@ const CharacterCard = (props) => {
 		<div className='card-container'>
 			<Card className={classes.root}>
 				<CardActionArea>
-					<CardMedia className={classes.media} image={image} />
+					<CardMedia className={classes.media} image={character.image} />
 					<CardContent>
 						<Typography gutterBottom variant='h5' component='h2'>
-							{name.toLowerCase()}
+							{character.name.toLowerCase()}
 						</Typography>
-						{/* <Typography variant='body2' color='textSecondary' component='p'>
-						Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica
-					</Typography> */}
 					</CardContent>
 				</CardActionArea>
-				<CardActions>
-					{/* <Button size='small' color='primary'>
-					Share
-				</Button> */}
-					<Button size='small' color='primary'>
-						Learn More
-					</Button>
-				</CardActions>
 			</Card>
 		</div>
 	);
