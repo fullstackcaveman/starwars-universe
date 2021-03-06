@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Loader from '../Loader';
 import CharacterCard from './CharacterCard';
 
@@ -11,7 +12,11 @@ const Characters = (props) => {
 	return (
 		<div className='characters-wrapper'>
 			{characters.map((character) => {
-				return <CharacterCard key={character.name} character={character} />;
+				return (
+					<Link to={`/characters/${character.id}`} key={character.id}>
+						<CharacterCard character={character} />
+					</Link>
+				);
 			})}
 		</div>
 	);

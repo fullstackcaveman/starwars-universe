@@ -1,5 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 import CharacterPage from './components/characters/CharacterPage';
+import CharacterInfo from './components/characters/CharacterInfo';
 import Films from './components/films/Films';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -13,12 +14,13 @@ const App = () => {
 		<div className='App'>
 			<Header />
 			<Switch>
-				<Route path='/characters' component={CharacterPage} />
-				<Route path='/films' component={Films} />
+				<Route exact path='/characters' component={CharacterPage} />
+				<Route path='/characters/:id' component={CharacterInfo} />
+				<Route exact path='/films' component={Films} />
 				<Route path='/planets' component={Planets} />
-				<Route path='/species' component={Species} />
+				<Route exact path='/species' component={Species} />
 				<Route path='/starships' component={Starships} />
-				<Route path='/vehicles' component={Vehicles} />
+				<Route exact path='/vehicles' component={Vehicles} />
 
 				<Route exact path='/' component={Home} />
 			</Switch>
