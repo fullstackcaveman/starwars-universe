@@ -1,3 +1,6 @@
+import SkipNextIcon from '@material-ui/icons/SkipNext';
+import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
+
 const Pagination = ({
 	charactersPerPage,
 	totalCharacters,
@@ -14,7 +17,9 @@ const Pagination = ({
 	return (
 		<nav className='pagination'>
 			<li onClick={prev}>
-				<p>Prev</p>
+				<p>
+					<SkipPreviousIcon />
+				</p>
 			</li>
 			{pageNumbers.map((number) => (
 				<li key={number} className={'page-item'} id={`page${number}`}>
@@ -24,7 +29,9 @@ const Pagination = ({
 				</li>
 			))}
 			<li onClick={next}>
-				<p>Next</p>
+				<p>
+					<SkipNextIcon />
+				</p>
 			</li>
 		</nav>
 	);
