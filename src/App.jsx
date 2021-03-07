@@ -8,6 +8,7 @@ import Planets from './components/planets/Planets';
 import Species from './components/species/Species';
 import Starships from './components/starships/Starships';
 import Vehicles from './components/vehicles/Vehicles';
+import Footer from './components/Footer';
 
 const App = () => {
 	return (
@@ -24,6 +25,7 @@ const App = () => {
 
 				<Route exact path='/' component={Home} />
 			</Switch>
+			<Footer />
 		</div>
 	);
 };

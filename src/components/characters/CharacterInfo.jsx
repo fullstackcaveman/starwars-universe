@@ -27,7 +27,7 @@ const CharacterInfo = ({ match }) => {
 
 	return (
 		<>
-			<div>
+			<div className='character-info-container'>
 				<h2>{character.name}</h2>
 				<h3>{character.species}</h3>
 				<h3>{character.homeworld}</h3>

@@ -45,3 +45,41 @@ header {
 		outline: none;
 	}
 }
+
+// Footer
+footer {
+	box-sizing: border-box;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	margin-top: 20px;
+	background-color: rgb(61, 61, 61);
+	z-index: 100;
+
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0 20px;
+		width: 100%;
+	}
+
+	.footer-top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-top,
+	.footer-bottom {
+		align-items: center;
+		text-align: center;
+		margin: 5px auto;
+		width: 100%;
+	}
+}

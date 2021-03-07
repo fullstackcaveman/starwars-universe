@@ -12,8 +12,9 @@
 			rgba(246, 230, 180, 1) 0%,
 			rgba(234, 129, 0, 1) 100%
 		);
+		cursor: pointer;
 
-		a {
+		p {
 			color: $primary-font-color;
 			font-size: 1.6rem;
 			padding: 0 10px;
