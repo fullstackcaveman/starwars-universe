@@ -555,6 +555,30 @@ footer .footer-bottom {
   align-items: center;
   text-align: center;
   max-width: 1480px;
+  height: 100%;
+}
+.character-info-container .character-info-card {
+  display: flex;
+  width: 600px;
+}
+.character-info-container .character-info-card .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.character-info-container .character-info-card .flex .character-data {
+  margin: 0 auto;
+  color: #fff;
+}
+.character-info-container .character-info-card .flex .character-data h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+.character-info-container .character-info-card .flex .character-data h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
 }
 
 /*# sourceMappingURL=main.css.map */
