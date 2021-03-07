@@ -136,7 +136,14 @@ table {
   src: local("STARJEDI"), url("../fonts/STARJEDI.TTF") format("truetype");
   font-weight: normal;
 }
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -149,10 +156,12 @@ body .App {
   font-size: 62.5%;
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  max-height: 100%;
 }
 
 header {
@@ -192,6 +201,40 @@ header .nav-btn {
 }
 .btn:focus {
   outline: none;
+}
+
+footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #3d3d3d;
+  z-index: 100;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  width: 100%;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-top,
+footer .footer-bottom {
+  align-items: center;
+  text-align: center;
+  margin: 5px auto;
+  width: 100%;
 }
 
 .pagination {
@@ -502,6 +545,14 @@ header .nav-btn {
 .MuiCard-root .MuiTypography-root {
   font-family: "STARJEDI";
   font-size: large;
+}
+
+.character-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1480px;
 }
 
 /*# sourceMappingURL=main.css.map */
