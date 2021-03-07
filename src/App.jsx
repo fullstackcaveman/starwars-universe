@@ -9,11 +9,13 @@ import Species from './components/species/Species';
 import Starships from './components/starships/Starships';
 import Vehicles from './components/vehicles/Vehicles';
 import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
 
 const App = () => {
 	return (
 		<div className='App'>
 			<Header />
+			<HeroSection />
 			<Switch>
 				<Route exact path='/characters' component={CharacterPage} />
 				<Route path='/characters/:id' component={CharacterInfo} />

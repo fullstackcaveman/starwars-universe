@@ -71,7 +71,7 @@ const CharacterPage = () => {
 
 	return (
 		<div className='character-page'>
-			<h1>Star Wars Characters</h1>
+			<h1>Characters</h1>
 			<Characters characters={currentCharacters} loading={loading} />
 			<Pagination
 				charactersPerPage={charactersPerPage}
