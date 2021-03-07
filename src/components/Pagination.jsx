@@ -18,11 +18,7 @@ const Pagination = ({
 			</li>
 			{pageNumbers.map((number) => (
 				<li key={number} className={'page-item'} id={`page${number}`}>
-					<p
-						className='page-link'
-						onClick={() => paginate(number)}
-						// href={`#page=${number}`}
-					>
+					<p className='page-link' onClick={() => paginate(number)}>
 						{number}
 					</p>
 				</li>
