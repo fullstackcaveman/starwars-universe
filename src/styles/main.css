@@ -247,13 +247,14 @@ footer .footer-bottom {
   border-radius: 3px;
   margin: 10px 3px;
   background: linear-gradient(to bottom, #f6e6b4 0%, #ea8100 100%);
+  cursor: pointer;
 }
-.pagination li a {
+.pagination li p {
   color: #4f1605;
   font-size: 1.6rem;
   padding: 0 10px;
 }
-.pagination li a.active {
+.pagination li p.active {
   color: black;
 }
 .pagination li.active {
