@@ -253,6 +253,7 @@ footer .footer-bottom {
   color: #4f1605;
   font-size: 1.6rem;
   padding: 0 10px;
+  padding-top: 5px;
 }
 .pagination li p.active {
   color: black;

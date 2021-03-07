@@ -6,7 +6,7 @@ import Background from '../Background';
 const CharacterInfo = ({ match }) => {
 	const [character, setCharacter] = useState({});
 
-	document.title = character.name;
+	document.title = `Star Wars | ${character.name}`;
 
 	const getCharacter = () => {
 		axios

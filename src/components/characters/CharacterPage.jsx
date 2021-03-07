@@ -12,7 +12,6 @@ const CharacterPage = () => {
 	// Change this to set characters per page
 	const [charactersPerPage] = useState(10);
 
-	// const pageOne = document.getElementById('page1');
 	const pages = document.querySelectorAll('.page-item');
 
 	// GET characters from the api

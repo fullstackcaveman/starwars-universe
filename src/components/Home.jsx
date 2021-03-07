@@ -2,6 +2,8 @@ import { Switch, Link } from 'react-router-dom';
 import Background from './Background';
 
 const Home = () => {
+	document.title = 'Star Wars Universe';
+
 	return (
 		<Switch>
 			<>

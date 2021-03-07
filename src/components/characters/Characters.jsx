@@ -5,6 +5,8 @@ import CharacterCard from './CharacterCard';
 const Characters = (props) => {
 	const { characters, loading } = props;
 
+	document.title = 'Star Wars Characters';
+
 	if (loading) {
 		return <Loader />;
 	}
