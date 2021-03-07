@@ -8,10 +8,10 @@ const Home = () => {
 		<Switch>
 			<>
 				<div id='home' className='home'>
-					<div className='starwars'>
+					{/* <div className='starwars'>
 						<p>STAR</p>
 						<span className='wars'>WARS</span>
-					</div>
+					</div> */}
 
 					<div className='links-container'>
 						<Link to='/characters'>

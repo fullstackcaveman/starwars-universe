@@ -22,6 +22,29 @@ header {
 	}
 }
 
+// Hero Section
+.starwars {
+	position: relative;
+	height: 170px;
+	width: 260px;
+	margin-top: 100px;
+
+	p,
+	span {
+		font-family: $starwars-font;
+		font-size: 5rem;
+		color: black;
+		text-shadow: -2px -2px 0 #ffee58, 2px -2px 0 #ffee58, -2px 2px 0 #ffee58,
+			2px 2px 0 #ffee58;
+
+		&.wars {
+			position: absolute;
+			top: 65px;
+			left: 12px;
+		}
+	}
+}
+
 // Buttons
 .btn {
 	border: none;

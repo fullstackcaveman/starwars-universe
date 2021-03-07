@@ -183,6 +183,26 @@ header .nav-btn {
   padding: 0 20px;
 }
 
+.starwars {
+  position: relative;
+  height: 170px;
+  width: 260px;
+  margin-top: 100px;
+}
+.starwars p,
+.starwars span {
+  font-family: "STARJEDI";
+  font-size: 5rem;
+  color: black;
+  text-shadow: -2px -2px 0 #ffee58, 2px -2px 0 #ffee58, -2px 2px 0 #ffee58, 2px 2px 0 #ffee58;
+}
+.starwars p.wars,
+.starwars span.wars {
+  position: absolute;
+  top: 65px;
+  left: 12px;
+}
+
 .btn {
   border: none;
   cursor: pointer;
@@ -344,24 +364,6 @@ footer .footer-bottom {
   text-align: center;
   width: 100%;
   height: 100%;
-}
-#home .starwars {
-  position: relative;
-  height: 170px;
-  width: 260px;
-}
-#home .starwars p,
-#home .starwars span {
-  font-family: "STARJEDI";
-  font-size: 5rem;
-  color: black;
-  text-shadow: -2px -2px 0 #ffee58, 2px -2px 0 #ffee58, -2px 2px 0 #ffee58, 2px 2px 0 #ffee58;
-}
-#home .starwars p.wars,
-#home .starwars span.wars {
-  position: absolute;
-  top: 65px;
-  left: 12px;
 }
 #home .links-container {
   display: flex;
