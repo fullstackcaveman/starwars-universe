@@ -6,7 +6,7 @@ import Background from '../Background';
 const CharacterInfo = ({ match }) => {
 	const [character, setCharacter] = useState({});
 
-	console.log(match);
+	document.title = character.name;
 
 	const getCharacter = () => {
 		axios
@@ -19,7 +19,6 @@ const CharacterInfo = ({ match }) => {
 				console.log(err);
 			});
 	};
-	console.log(character.name);
 
 	useEffect(() => {
 		getCharacter();
