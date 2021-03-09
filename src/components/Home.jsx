@@ -8,11 +8,6 @@ const Home = () => {
 		<Switch>
 			<>
 				<div id='home' className='home'>
-					{/* <div className='starwars'>
-						<p>STAR</p>
-						<span className='wars'>WARS</span>
-					</div> */}
-
 					<div className='links-container'>
 						<Link to='/characters'>
 							<div className='characters-link' />

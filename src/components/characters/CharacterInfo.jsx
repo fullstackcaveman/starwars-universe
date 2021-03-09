@@ -14,16 +14,33 @@ import Background from '../Background';
 
 const CharacterInfo = ({ match }) => {
 	const [character, setCharacter] = useState({});
+	const {
+		name,
+		species,
+		born,
+		gender,
+		height,
+		mass,
+		hairColor,
+		skinColor,
+		homeworld,
+	} = character;
 
 	document.title = `Star Wars | ${character.name}`;
+
+	const [capSpecies, setCapSpecies] = useState();
+	const [capBorn, setCapBorn] = useState();
 
 	const getCharacter = () => {
 		// setLoading(true);
 		axios
 			.get(`${BASE_URL}/id/${match.params.id}.json`)
 			.then((res) => {
-				console.log(res.data);
-				setCharacter(res.data);
+				const data = res.data;
+				console.log(data);
+				setCharacter(data);
+				setCapSpecies(data.species);
+				setCapBorn(data.born);
 				// setLoading(false);
 			})
 			.catch((err) => {
@@ -33,6 +50,21 @@ const CharacterInfo = ({ match }) => {
 
 	useEffect(() => {
 		getCharacter();
+	}, []);
+
+	console.log(capSpecies);
+
+	// console.log(toCapital(capSpecies));
+
+	useEffect(() => {
+		const toCapital = (value) => {
+			const valueToUse = value.charAt(0).toUpperCase() + value.slice(1);
+			if (value === 'species') {
+				setCapSpecies(valueToUse);
+			} else if (value === 'born') {
+				setCapBorn(valueToUse);
+			}
+		};
 	}, []);
 
 	return (
@@ -46,15 +78,15 @@ const CharacterInfo = ({ match }) => {
 							image={character.image}
 						/>
 						<CardContent className='character-data'>
-							<Typography component='h1'>{character.name}</Typography>
-							<Typography component='h3'>{`Species: ${character.species}`}</Typography>
-							<Typography component='h3'>{`Birth: ${character.born}bby`}</Typography>
-							<Typography component='h3'>{`Gender: ${character.gender}`}</Typography>
-							<Typography component='h3'>{`Height: ${character.height}m`}</Typography>
-							<Typography component='h3'>{`Mass: ${character.mass}kg`}</Typography>
-							<Typography component='h3'>{`Hair Color: ${character.hairColor}`}</Typography>
-							<Typography component='h3'>{`Skin Color: ${character.skinColor}`}</Typography>
-							<Typography component='h3'>{`Homeworld: ${character.homeworld}`}</Typography>
+							<Typography component='h1'>{name}</Typography>
+							<Typography component='h3'>{species}</Typography>
+							<Typography component='h3'>{`Birth: ${born}BBY`}</Typography>
+							<Typography component='h3'>{`Gender: ${gender}`}</Typography>
+							<Typography component='h3'>{`Height: ${height}m`}</Typography>
+							<Typography component='h3'>{`Mass: ${mass}kg`}</Typography>
+							<Typography component='h3'>{`Hair Color: ${hairColor}`}</Typography>
+							<Typography component='h3'>{`Skin Color: ${skinColor}`}</Typography>
+							<Typography component='h3'>{`Homeworld: ${homeworld}`}</Typography>
 						</CardContent>
 					</div>
 				</Card>
