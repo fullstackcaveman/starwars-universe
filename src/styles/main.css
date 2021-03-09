@@ -233,7 +233,7 @@ footer {
   height: 50px;
   width: 100%;
   margin-top: 20px;
-  background-color: #3d3d3d;
+  background-color: transparent;
   z-index: 100;
 }
 footer .footer-container {
@@ -244,10 +244,12 @@ footer .footer-container {
   text-align: center;
   padding: 0 20px;
   width: 100%;
+  color: white;
 }
 footer .footer-top {
   display: flex;
   justify-content: space-between;
+  font-size: 0.8rem;
 }
 footer .footer-top,
 footer .footer-bottom {
@@ -349,11 +351,11 @@ footer .footer-bottom {
   top: 0;
   bottom: 0;
   z-index: 2;
-  -moz-animation: move-background 70s linear infinite;
-  -ms-animation: move-background 70s linear infinite;
-  -o-animation: move-background 70s linear infinite;
-  -webkit-animation: move-background 70s linear infinite;
-  animation: move-background 70s linear infinite;
+  -moz-animation: move-background 30s linear infinite;
+  -ms-animation: move-background 30s linear infinite;
+  -o-animation: move-background 30s linear infinite;
+  -webkit-animation: move-background 30s linear infinite;
+  animation: move-background 30s linear infinite;
 }
 
 #home {
