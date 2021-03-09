@@ -16,7 +16,7 @@ const Characters = (props) => {
 			{characters.map((character) => {
 				return (
 					<Link to={`/characters/${character.id}`} key={character.id}>
-						<CharacterCard character={character} />
+						<CharacterCard character={character} loading={loading} />
 					</Link>
 				);
 			})}
