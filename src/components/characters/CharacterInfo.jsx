@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BASE_URL } from '../../constants';
-import {
-	Paper,
-	Grid,
-	Typography,
-	Card,
-	CardMedia,
-	CardContent,
-	CardActionArea,
-} from '@material-ui/core';
+import { Typography, Card, CardMedia, CardContent } from '@material-ui/core';
 import Background from '../Background';
 
 const CharacterInfo = ({ match }) => {
@@ -79,14 +71,54 @@ const CharacterInfo = ({ match }) => {
 						/>
 						<CardContent className='character-data'>
 							<Typography component='h1'>{name}</Typography>
-							<Typography component='h3'>{species}</Typography>
-							<Typography component='h3'>{`Birth: ${born}BBY`}</Typography>
-							<Typography component='h3'>{`Gender: ${gender}`}</Typography>
-							<Typography component='h3'>{`Height: ${height}m`}</Typography>
-							<Typography component='h3'>{`Mass: ${mass}kg`}</Typography>
-							<Typography component='h3'>{`Hair Color: ${hairColor}`}</Typography>
-							<Typography component='h3'>{`Skin Color: ${skinColor}`}</Typography>
-							<Typography component='h3'>{`Homeworld: ${homeworld}`}</Typography>
+
+							{!species ? (
+								<Typography component='h3'>Species: unknown</Typography>
+							) : (
+								<Typography component='h3'>{`Species: ${species}`}</Typography>
+							)}
+
+							{!born ? (
+								<Typography component='h3'>Birth: unknown</Typography>
+							) : (
+								<Typography component='h3'>{`Birth: ${born}BBY`}</Typography>
+							)}
+
+							{!gender ? (
+								<Typography component='h3'>Gender: unknown</Typography>
+							) : (
+								<Typography component='h3'>{`Gender: ${gender}`}</Typography>
+							)}
+
+							{!height ? (
+								<Typography component='h3'>Height: unknown</Typography>
+							) : (
+								<Typography component='h3'>{`Height: ${height}m`}</Typography>
+							)}
+
+							{!mass ? (
+								<Typography component='h3'>Mass: unknown</Typography>
+							) : (
+								<Typography component='h3'>{`Mass: ${mass}kg`}</Typography>
+							)}
+
+							{!hairColor ? (
+								<Typography component='h3'>Hair Color: n/a</Typography>
+							) : (
+								<Typography component='h3'>{`Hair Color: ${hairColor}`}</Typography>
+							)}
+
+							{!skinColor ? (
+								<Typography component='h3'>Skin Color: n/a</Typography>
+							) : (
+								<Typography component='h3'>{`Skin Color: ${skinColor}`}</Typography>
+							)}
+
+							{!homeworld ? (
+								<Typography component='h3'>Homeworld: unknown</Typography>
+							) : (
+								<Typography component='h3'>{`Homeworld: ${homeworld}`}</Typography>
+							)}
 						</CardContent>
 					</div>
 				</Card>
