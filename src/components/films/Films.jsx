@@ -1,10 +1,14 @@
 import React from 'react';
+import Background from '../Background';
 
 const Films = () => {
 	return (
-		<div>
-			<h2>Films Page Works</h2>
-		</div>
+		<>
+			<div className='vehicles-container'>
+				<h2>Under Construction</h2>
+			</div>
+			<Background />
+		</>
 	);
 };
 

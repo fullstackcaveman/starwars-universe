@@ -1,10 +1,12 @@
 import React from 'react';
+import Background from '../Background';
 
 const Starships = () => {
 	return (
-		<div>
-			<h2>starships works</h2>
-		</div>
+		<>
+			<div className='starships-container'></div>
+			<Background />
+		</>
 	);
 };
 

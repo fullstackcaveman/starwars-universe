@@ -585,4 +585,49 @@ footer .footer-bottom {
   text-align: left;
 }
 
+.films-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/under-construction.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.planets-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/under-construction.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.species-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/under-construction.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.starships-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/under-construction.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.vehicles-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/under-construction.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=main.css.map */

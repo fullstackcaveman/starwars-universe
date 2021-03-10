@@ -1,10 +1,12 @@
 import React from 'react';
+import Background from '../Background';
 
 const Planets = () => {
 	return (
-		<div>
-			<h2>planets works</h2>
-		</div>
+		<>
+			<div className='vehicles-container'></div>
+			<Background />
+		</>
 	);
 };
 
