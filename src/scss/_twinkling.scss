@@ -51,7 +51,8 @@
 
 	.stars {
 		background: black
-			url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png')
+			repeat;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -74,10 +75,11 @@
 		bottom: 0;
 		z-index: 2;
 
-		-moz-animation: move-background 30s linear infinite;
-		-ms-animation: move-background 30s linear infinite;
-		-o-animation: move-background 30s linear infinite;
-		-webkit-animation: move-background 30s linear infinite;
-		animation: move-background 30s linear infinite;
+		-moz-animation: move-background $background-animation-time linear infinite;
+		-ms-animation: move-background $background-animation-time linear infinite;
+		-o-animation: move-background $background-animation-time linear infinite;
+		-webkit-animation: move-background $background-animation-time linear
+			infinite;
+		animation: move-background $background-animation-time linear infinite;
 	}
 }
