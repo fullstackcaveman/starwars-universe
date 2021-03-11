@@ -4,11 +4,15 @@
 	font-weight: normal;
 }
 
-$primary-font-color: #4f1605;
-
+// Fonts
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Impact', sans-serif;
 $starwars-font: 'STARJEDI';
 
+// Colors
+$primary-font-color: #4f1605;
 $color-white: #fff;
 $starwars-yellow: #ffee58;
+
+// Background Animation
+$background-animation-time: 50s;
