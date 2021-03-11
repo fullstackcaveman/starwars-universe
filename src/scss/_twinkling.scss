@@ -50,9 +50,7 @@
 	}
 
 	.stars {
-		background: black
-			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png')
-			repeat;
+		background: black url($background-image) repeat;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -65,9 +63,7 @@
 	.twinkling {
 		width: 10000px;
 		height: 100%;
-		background: transparent
-			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png')
-			repeat;
+		background: transparent url($background-twinkle) repeat;
 		background-size: 1000px 1000px;
 		position: absolute;
 		right: 0;
