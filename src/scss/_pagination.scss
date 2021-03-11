@@ -9,8 +9,9 @@
 		margin: 10px 3px;
 		background: linear-gradient(
 			to bottom,
-			$starwars-yellow 0%,
-			rgb(253, 114, 0) 100%
+			$starwars-yellow 25%,
+			#fff 50%,
+			$starwars-yellow 75%
 		);
 		cursor: pointer;
 
