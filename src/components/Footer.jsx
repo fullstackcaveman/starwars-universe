@@ -9,12 +9,12 @@ const Footer = () => {
 				<div className='footer-top'>
 					{/* <h2>
 						FullStackCaveman |{' '}
-						<a href='https://github.com/fullstackcaveman' target='_blank'>
+						<a href='https://github.com/fullstackcaveman' target='_blank' rel="noreferrer">
 							<GitHubIcon />
 							GitHub
 						</a>{' '}
 						|{' '}
-						<a href='https://linkedin.com/in/fullstackcaveman/' target='_blank'>
+						<a href='https://linkedin.com/in/fullstackcaveman/' target='_blank' rel="noreferrer">
 							{' '}
 							<LinkedInIcon /> LinkedIn{' '}
 						</a>
@@ -28,6 +28,7 @@ const Footer = () => {
 						<a
 							href='https://starwars.fandom.com/wiki/Main_Page'
 							target='_blank'
+							rel='noreferrer'
 						>
 							Wookiepedia
 						</a>{' '}

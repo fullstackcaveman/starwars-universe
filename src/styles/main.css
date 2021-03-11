@@ -268,7 +268,7 @@ footer .footer-bottom {
   border: 1px solid black;
   border-radius: 3px;
   margin: 10px 3px;
-  background: linear-gradient(to bottom, #f6e6b4 0%, #ea8100 100%);
+  background: linear-gradient(to bottom, #ffe81f 0%, #fd7200 100%);
   cursor: pointer;
 }
 .pagination li p {
@@ -537,8 +537,8 @@ footer .footer-bottom {
   max-height: 385px;
 }
 .MuiCard-root.MuiPaper-root {
-  color: #ffee58;
-  border: 3px solid #ffee58;
+  color: #ffe81f;
+  border: 3px solid #ffe81f;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png);
 }
 .MuiCard-root .MuiCardMedia-root {
