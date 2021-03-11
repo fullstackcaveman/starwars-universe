@@ -1,4 +1,3 @@
-import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
@@ -9,12 +8,20 @@ const Footer = () => {
 				<div className='footer-top'>
 					{/* <h2>
 						FullStackCaveman |{' '}
-						<a href='https://github.com/fullstackcaveman' target='_blank' rel="noreferrer">
+						<a
+							href='https://github.com/fullstackcaveman'
+							target='_blank'
+							rel='noreferrer'
+						>
 							<GitHubIcon />
 							GitHub
 						</a>{' '}
 						|{' '}
-						<a href='https://linkedin.com/in/fullstackcaveman/' target='_blank' rel="noreferrer">
+						<a
+							href='https://linkedin.com/in/fullstackcaveman/'
+							target='_blank'
+							rel='noreferrer'
+						>
 							{' '}
 							<LinkedInIcon /> LinkedIn{' '}
 						</a>
