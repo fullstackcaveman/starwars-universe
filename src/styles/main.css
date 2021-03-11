@@ -268,7 +268,7 @@ footer .footer-bottom {
   border: 1px solid black;
   border-radius: 3px;
   margin: 10px 3px;
-  background: linear-gradient(to bottom, #ffe81f 0%, #fd7200 100%);
+  background: linear-gradient(to bottom, #ffe81f 25%, #fff 50%, #ffe81f 75%);
   cursor: pointer;
 }
 .pagination li p {
