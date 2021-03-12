@@ -1,11 +1,9 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BASE_URL } from '../../constants';
 import { Typography, Card, CardMedia, CardContent } from '@material-ui/core';
 import Loader from '../Loader';
-
-// Lazy Load
-const Background = lazy(() => import('../Background'));
+import Background from '../Background';
 
 const CharacterInfo = ({ match }) => {
 	const [character, setCharacter] = useState({});
@@ -126,9 +124,7 @@ const CharacterInfo = ({ match }) => {
 					</div>
 				</Card>
 			</div>
-			<Suspense fallback={Loader}>
-				<Background />
-			</Suspense>
+			<Background />
 		</>
 	);
 };
