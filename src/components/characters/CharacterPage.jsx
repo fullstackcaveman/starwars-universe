@@ -1,12 +1,12 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import axios from 'axios';
 import { BASE_URL } from '../../constants';
+import Background from '../Background';
 import Loader from '../Loader';
 
 // Lazy Loading
 const Characters = lazy(() => import('./Characters'));
 const Pagination = lazy(() => import('../Pagination'));
-const Background = lazy(() => import('../Background'));
 
 const CharacterPage = () => {
 	const [characters, setCharacters] = useState([]);
@@ -89,9 +89,7 @@ const CharacterPage = () => {
 				/>
 			</Suspense>
 
-			<Suspense fallback={Loader}>
-				<Background />
-			</Suspense>
+			<Background />
 		</div>
 	);
 };

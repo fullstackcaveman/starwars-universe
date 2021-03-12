@@ -1,9 +1,5 @@
-import { lazy, Suspense } from 'react';
 import { Switch, Link } from 'react-router-dom';
-import Loader from './Loader';
-
-// Lazy Load
-const Background = lazy(() => import('./Background'));
+import Background from './Background';
 
 const Home = () => {
 	document.title = 'Star Wars Universe';
@@ -38,9 +34,7 @@ const Home = () => {
 						</Link>
 					</div>
 
-					<Suspense fallback={Loader}>
-						<Background />
-					</Suspense>
+					<Background />
 				</div>
 			</>
 		</Switch>
