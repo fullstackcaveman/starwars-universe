@@ -1,6 +1,9 @@
+import { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from '../Loader';
-import CharacterCard from './CharacterCard';
+
+// Lazy Load
+const CharacterCard = lazy(() => import('./CharacterCard'));
 
 const Characters = (props) => {
 	const { characters, loading } = props;
@@ -16,7 +19,9 @@ const Characters = (props) => {
 			{characters.map((character) => {
 				return (
 					<Link to={`/characters/${character.id}`} key={character.id}>
-						<CharacterCard character={character} loading={loading} />
+						<Suspense fallback={Loader}>
+							<CharacterCard character={character} loading={loading} />
+						</Suspense>
 					</Link>
 				);
 			})}

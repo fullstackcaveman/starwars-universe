@@ -3,6 +3,7 @@ import axios from 'axios';
 import { BASE_URL } from '../../constants';
 import Loader from '../Loader';
 
+// Lazy Loading
 const Characters = lazy(() => import('./Characters'));
 const Pagination = lazy(() => import('../Pagination'));
 const Background = lazy(() => import('../Background'));
