@@ -1,4 +1,3 @@
-import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -22,6 +21,7 @@ const CharacterCard = (props) => {
 			<Card className={classes.root}>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={character.image} />
+
 					<CardContent>
 						<Typography gutterBottom variant='h5' component='h2'>
 							{character.name.toLowerCase()}

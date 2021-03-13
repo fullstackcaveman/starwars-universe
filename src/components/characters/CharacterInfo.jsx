@@ -4,6 +4,7 @@ import { BASE_URL } from '../../constants';
 import { Typography, Card, CardMedia, CardContent } from '@material-ui/core';
 import Loader from '../Loader';
 import Background from '../Background';
+import RelatedFilms from '../films/RelatedFilms';
 
 const CharacterInfo = ({ match }) => {
 	const [character, setCharacter] = useState({});
@@ -35,6 +36,7 @@ const CharacterInfo = ({ match }) => {
 				setCapSpecies(data.species);
 				setCapBorn(data.born);
 				// setLoading(false);
+				console.log(data);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -123,6 +125,9 @@ const CharacterInfo = ({ match }) => {
 						</CardContent>
 					</div>
 				</Card>
+				<div className='flex'>
+					<RelatedFilms />
+				</div>
 			</div>
 			<Background />
 		</>
