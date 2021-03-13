@@ -1,6 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import axios from 'axios';
-import { BASE_URL } from '../../constants';
+import { AKABAB_BASE_URL } from '../../constants';
 import Background from '../Background';
 import Loader from '../Loader';
 
@@ -22,7 +22,7 @@ const CharacterPage = () => {
 		const fetchCharacters = () => {
 			setLoading(true);
 			axios
-				.get(`${BASE_URL}/all.json`)
+				.get(`${AKABAB_BASE_URL}/all.json`)
 				.then((res) => {
 					setCharacters(res.data);
 					setLoading(false);

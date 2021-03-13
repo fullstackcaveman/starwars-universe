@@ -534,7 +534,7 @@ footer .footer-bottom {
   box-sizing: border-box;
   width: 250px;
   margin: 10px;
-  max-height: 385px;
+  height: 370px;
 }
 .MuiCard-root.MuiPaper-root {
   color: #ffe81f;

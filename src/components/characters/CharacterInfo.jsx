@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BASE_URL } from '../../constants';
+import { AKABAB_BASE_URL, SWAPI_BASE_URL } from '../../constants';
 import { Typography, Card, CardMedia, CardContent } from '@material-ui/core';
 import Loader from '../Loader';
 import Background from '../Background';
@@ -8,6 +8,7 @@ import RelatedFilms from '../films/RelatedFilms';
 
 const CharacterInfo = ({ match }) => {
 	const [character, setCharacter] = useState({});
+	const [swapiCharacter, setSwapiCharacter] = useState({});
 	const {
 		name,
 		species,
@@ -28,7 +29,7 @@ const CharacterInfo = ({ match }) => {
 	const getCharacter = () => {
 		// setLoading(true);
 		axios
-			.get(`${BASE_URL}/id/${match.params.id}.json`)
+			.get(`${AKABAB_BASE_URL}/id/${match.params.id}.json`)
 			.then((res) => {
 				const data = res.data;
 				console.log(data);
@@ -43,13 +44,22 @@ const CharacterInfo = ({ match }) => {
 			});
 	};
 
+	const getSwapi = () => {
+		axios
+			.get(`${SWAPI_BASE_URL}/people/${match.params.id}`)
+			.then((res) => {
+				const character = res.data;
+				setSwapiCharacter(character);
+			})
+			.catch((err) => console.log(err));
+	};
+
 	useEffect(() => {
 		getCharacter();
+		getSwapi();
 	}, []);
 
-	console.log(capSpecies);
-
-	// console.log(toCapital(capSpecies));
+	console.log(swapiCharacter);
 
 	useEffect(() => {
 		const toCapital = (value) => {
