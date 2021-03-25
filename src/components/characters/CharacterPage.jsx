@@ -13,8 +13,6 @@ const CharacterPage = () => {
 	// Change this to set characters per page
 	const [charactersPerPage] = useState(10);
 
-	const pages = document.querySelectorAll('.page-item');
-
 	// GET characters from the api
 	useEffect(() => {
 		const fetchCharacters = () => {
@@ -24,7 +22,7 @@ const CharacterPage = () => {
 				.then((res) => {
 					setCharacters(res.data);
 					setLoading(false);
-					console.log(res.data);
+					// console.log(res.data);
 				})
 				.catch((err) => {
 					console.log(err);
